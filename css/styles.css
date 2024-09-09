@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7da; /* Verde suave, relacionado à natureza e animais */
+    padding: 20px;
+}
+
+.container {
+    width: 45%; 
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+#form-container,
+#animals-list {
+    margin-bottom: 20px;
+}
+
+#animal-form label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+#animal-form input,
+#animal-form button,
+#animal-form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#animal-form input:focus,
+#animal-form select:focus {
+    border-color: #007BFF;
+}
+
+#animal-form button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#animal-form button:hover {
+    background-color: #0056b3;
+}
+
+#animals-list {
+    width: 45%;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#animals-list:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botaoAtualizar,
+.botaoAtualizar:hover {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+}
+
+button.edit:hover {
+    background-color: #45a049;
+}
+
+button.remove {
+    background-color: #dc3545; /* Cor vermelha para o botão de remover */
+    color: white;
+    padding: 8px;
+    
+}
+
+button.remove:hover {
+    background-color: #c82333;
+}
+
+#animal-form select {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container,
+    #animals-list {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #animals-list {
+        margin-left: 0;
+    }
+}
